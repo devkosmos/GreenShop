@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenShop - Магазин виртуальных товаров</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/homepage.css') }}">
+</head>
+<body>
+    <!-- Шапка с логотипом и профилем -->
+    <header>
+        <div class="logo">
+            <div class="logo-icon">
+                <i class="fas fa-shopping-bag"></i>
+            </div>
+            <div class="logo-text">GreenShop</div>
+        </div>
+        <a href="#" class="user-profile">
+            <i class="fas fa-user"></i>
+        </a>
+    </header>
+    
+    <div class="container">
+        <!-- Поисковая строка -->
+        <div class="search-container">
+            <form action="#" method="GET">
+                <input type="text" class="search-input" placeholder="Поиск товаров..." name="search">
+                <button type="submit" class="search-btn">
+                    <i class="fas fa-search"></i>
+                </button>
+            </form>
+        </div>
+        
+        <!-- Рекламный баннер -->
+        <div class="banner">
+            <div class="banner-content">
+                <div class="banner-title">Скидка 20% на первую покупку!</div>
+                <div class="banner-text">Используй промокод: GREEN20 при оформлении заказа</div>
+                <a href="#" class="banner-btn">Подробнее</a>
+            </div>
+        </div>
+        
+        <!-- Категории товаров -->
+        <div class="section-title">
+            <i class="fas fa-th-large"></i> Категории
+        </div>
+        <div class="categories">
+            <a href="#" class="category-card">
+                <div class="category-icon">
+                    <i class="fab fa-discord"></i>
+                </div>
+                <div class="category-name">Discord Nitro</div>
+            </a>
+            
+            <a href="#" class="category-card">
+                <div class="category-icon">
+                    <i class="fab fa-steam"></i>
+                </div>
+                <div class="category-name">Steam</div>
+            </a>
+            
+            <a href="#" class="category-card">
+                <div class="category-icon">
+                    <i class="fab fa-telegram"></i>
+                </div>
+                <div class="category-name">Telegram Premium</div>
+            </a>
+        </div>
+        
+        <!-- Популярные товары -->
+        <div class="section-title">
+            <i class="fas fa-fire"></i> Популярные товары
+        </div>
+        <div class="products">
+            <a href="#" class="product-card">
+                <div class="product-img">
+                    <i class="fab fa-discord"></i>
+                </div>
+                <div class="product-info">
+                    <div class="product-title">Discord Nitro 1 месяц</div>
+                    <div class="product-description">Полная версия Discord Nitro на 30 дней</div>
+                    <div class="product-footer">
+                        <div class="product-price">299 ₽</div>
+                        <button class="add-to-cart">
+                            <i class="fas fa-cart-plus"></i>
+                        </button>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="#" class="product-card">
+                <div class="product-img">
+                    <i class="fab fa-steam"></i>
+                </div>
+                <div class="product-info">
+                    <div class="product-title">Steam Gift Card $50</div>
+                    <div class="product-description">Подарочная карта Steam номиналом $50</div>
+                    <div class="product-footer">
+                        <div class="product-price">4 500 ₽</div>
+                        <button class="add-to-cart">
+                            <i class="fas fa-cart-plus"></i>
+                        </button>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="#" class="product-card">
+                <div class="product-img">
+                    <i class="fab fa-telegram"></i>
+                </div>
+                <div class="product-info">
+                    <div class="product-title">Telegram Premium 1 год</div>
+                    <div class="product-description">Премиум подписка Telegram на 12 месяцев</div>
+                    <div class="product-footer">
+                        <div class="product-price">3 990 ₽</div>
+                        <button class="add-to-cart">
+                            <i class="fas fa-cart-plus"></i>
+                        </button>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="#" class="product-card">
+                <div class="product-img">
+                    <i class="fas fa-gamepad"></i>
+                </div>
+                <div class="product-info">
+                    <div class="product-title">Xbox Game Pass 3 месяца</div>
+                    <div class="product-description">Подписка Xbox Game Pass на 3 месяца</div>
+                    <div class="product-footer">
+                        <div class="product-price">1 299 ₽</div>
+                        <button class="add-to-cart">
+                            <i class="fas fa-cart-plus"></i>
+                        </button>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+    
+    <!-- Навигационное меню -->
+    <nav class="nav-menu">
+        <a href="#" class="nav-item active">
+            <i class="fas fa-home nav-icon"></i>
+            <span class="nav-text">Главная</span>
+        </a>
+        <a href="#" class="nav-item">
+            <i class="fas fa-th-large nav-icon"></i>
+            <span class="nav-text">Каталог</span>
+        </a>
+        <a href="#" class="nav-item">
+            <i class="fas fa-search nav-icon"></i>
+            <span class="nav-text">Найти</span>
+        </a>
+        <a href="#" class="nav-item">
+            <i class="fas fa-shopping-cart nav-icon"></i>
+            <span class="nav-text">Корзина</span>
+        </a>
+        <a href="#" class="nav-item">
+            <i class="fas fa-user nav-icon"></i>
+            <span class="nav-text">Профиль</span>
+        </a>
+    </nav>
+    
+    <!-- Футер -->
+    <footer>
+        <div>© 2023 GreenShop. Все права защищены.</div>
+        <div>Магазин виртуальных товаров</div>
+    </footer>
+</body>
+</html>
